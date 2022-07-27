@@ -1,0 +1,18 @@
+p{
+    background-color: #ffcccb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#blue{
+    color: blue;
+    font-size: 36px;
+}
+
+#green{
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+.bigger{
+    font-size: 24px;
+}
