@@ -1,0 +1,65 @@
+
+h1,
+h3,
+Buttons{
+    text-align: center;
+}
+
+
+button, img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+button{
+    font-size: 24px;
+    background: rgb(223, 223, 195);
+}
+img{
+    width: 50%;
+}
+
+body{
+    background-color: beige;
+}
+
+.Ingredients,
+.Description,
+.Steps{
+    text-align: center;
+    background-color: bisque;
+}
+.Description{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.Ingredients{
+    float: left;
+    width: 20%;
+    margin-left: 15%;
+}
+.Steps{
+
+    float: left;
+    width: 49%;
+    margin-left: 1%;
+}
+.Buttons{
+    margin-right: 5%;
+    position: fixed;
+    right: 0;
+    top: 10px;
+}
+
+
+ul,
+ol{
+    margin-right: 20px;
+}
+
+li{
+    margin-bottom: 20px;
+}
