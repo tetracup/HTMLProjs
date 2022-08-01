@@ -1,0 +1,42 @@
+body{
+    
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+.content{
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#BBox1{
+
+    background-color: #1F2937;
+    color: white;
+}
+#BBox3{
+    background: #3f67b8;
+}
+
+ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display: flex;
+    gap:8px;
+
+}
+
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
