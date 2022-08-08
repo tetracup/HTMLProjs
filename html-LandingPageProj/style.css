@@ -1,24 +1,97 @@
+
+
+@font-face {
+    font-family: "Customfont";
+    src: url("./fonts/Crillee.otf") format("opentype");
+}
+
+
+
 body{
-    
+    height: auto;
     margin:0;
     display: flex;
     flex-direction: column;
     align-items:center;
-
+    font-family: "Customfont", sans-serif;
 }
+
 .content{
     width:600px;
+}
+
+.base-box{
+    width:100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
 }
 #BBox1{
 
-    background-color: #1F2937;
-    color: white;
+    background-color: #f2c300;
+    color: black;
+}
+#BBox1 > .content{
+    padding: 32px 0;
+    padding-bottom: 48px;
+}
+
+#BBox2,
+#BBox3{
+    height:auto;
+    margin:0;
+    padding:16px
+}
+
+#BBox2 > .content, 
+#BBox3 > .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#BBox3 > .content{
+    width: auto;
+}
+
+#BBox2 > .content{
+    padding: 32px 16px;
+    gap:32px;
+}
+.content>h1{
+    margin:0;
+    padding:0;
 }
 #BBox3{
-    background: #3f67b8;
+    background-color: #3f67b8;
+    color: white;
+    text-align: center;
+    padding:64px 32px;
+}
+#BBox4{
+    height: auto;
+    padding: 64px;
+}
+
+#BBox4 > .content{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    margin:0;
+    gap:32px;
+
+}
+#BBox4 > .content >div > p{
+    margin:0;
+    padding:0;
+}
+
+
+#BBox5{
+    background-color: green;
+    height: auto;
+
 }
 
 ul{
@@ -30,6 +103,22 @@ ul{
 
 }
 
+li{
+    text-decoration: underline;
+}
+button{
+    font-family: "Customfont";
+    margin:0;
+    padding:8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center; 
+    background-color: white;
+    border: 0;
+    border-radius: 30px;
+    display: inline-block;
+}
+
 a, a:hover, a:focus, a:active{
     text-decoration: none;
     color: inherit;
@@ -38,5 +127,82 @@ a, a:hover, a:focus, a:active{
 .header{
     display: flex;
     justify-content: space-between;
+    padding: 16px 0px;
+}
+
+.title-content{
+    width:auto;
+    display: flex;
+}
+.title-content > div{
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
+
+#title-content-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    margin:0;
+    padding:0;
+}
+
+
+.crew-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+    justify-content: center;
+
+}
+.crew-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+}
+
+#picard{
+    width:150px;
+}
+
+.crew-card>p{
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+
+img{
+    border-radius: 5%;
+}
+
+.crew-card>img{
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#forge,
+#crusher{
+    object-position: 50% 25%;
+}
+
+#quote{
+    font-size: 34px;
+}
+
+.lessOp{
+    opacity: 0.6;
+}
+
+.footer{
+    text-align: center;
+    padding: 16px;
+}
+
+
+
+
