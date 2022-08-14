@@ -1,0 +1,27 @@
+.container{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*
+    background:linear-gradient(
+        to right,
+        lightblue 0%,
+        lightblue 40%,
+        rgb(255, 77, 77) 60%,
+        rgb(255, 77, 77) 100%
+
+    )
+    */
+    background: linear-gradient(
+        to right, 
+    rgb(118, 118, 255) 20%, rgb(255, 77, 77) 80%
+    );
+    font-size: 32px;
+}
+
+button{
+    padding:16px 32px;
+    font-size: 32px;
+}

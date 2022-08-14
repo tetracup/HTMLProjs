@@ -3,83 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Title</title>
+  <link rel="stylesheet" href="style.css">
+  <script src = "javascript.js" defer></script>
 </head>
 <body>
-  <script>
 
-    let wins = 0
-    let losses = 0
-    function getComputerChoice()
-    {
-      let randInt = Math.floor(Math.random() * 3)
-      switch(randInt)
-      {
-        case 0: return "rock";
-        case 1: return "scissors";
-        case 2: return "paper";
-      }
-    }
-    
-    function playRound (playerSelection, computerSelection)
-    {
-      if(playerSelection == computerSelection)
-        return "It's a tie!"
-      switch(playerSelection)
-      {
-        case "rock":
-          return (computerSelection == "scissors" ? "You Win!" : "You Lose!")
-        case "scissors":
-          return (computerSelection == "paper" ? "You Win!" : "You Lose!")
-        case "paper":
-          return (computerSelection == "rock" ? "You Win!" : "You Lose!")
-      }
-    }
-
-    function isInputValid(str)
-    {
-      str = str.toLowerCase() 
-      switch(str)
-      {
-        case "rock": 
-        case "scissors":
-        case "paper":
-          return true
-        default:
-          return false
-      }
-    }
-    function game()
-    {
-      for(let i = 1; i <=5; i++)
-      {
-        let input = prompt("Rock, Paper or Scissors?")
-        while(!isInputValid(input))
-        {
-          input = prompt("Rock, Paper or Scissors?")
-        }
-        let result = playRound(input, getComputerChoice())
-        
-        if(result == "You Win!")
-          wins++;
-        else if( result == "You Lose!")
-          losses++;
-        if(wins >= 3 || losses >= 3)
-          break;
-        alert(result + ", " + wins + ":" + losses)
-      }
-
-      let finalString = ""
-      if(wins > losses)
-        finalString = "You have won the game!"
-      else if(wins == losses)
-        finalString = "Nobody wins!"
-      else 
-        finalString = "You have lost the game!"
-        alert(finalString + ", " + wins + ":" + losses)
-    }
-
-    game()
-    
-  </script>
+  <div class = "container">
+    <p id = "round">0</p>
+    <p id = score>0:0</p>
+    <p id = status>Choose your weapon!</p>
+    <div class = "buttons">
+      <button>rock</button>
+      <button>paper</button>
+      <button>scissors</button>
+    </div>
+    <button id = "retry">Again?</button>
+  </div>
 </body>
 </html>

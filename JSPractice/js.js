@@ -24,4 +24,11 @@ const anotherP = document.createElement('p')
 anotherP.textContent = "ME TOO!"
 container.appendChild(anotherP)
 
+const btn = document.querySelector(".alertButton")
+
+btn.addEventListener('click', function (e){
+    e.target.style.background = "blue"
+})
+
+
 
